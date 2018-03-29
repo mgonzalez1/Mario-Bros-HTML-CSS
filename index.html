@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mario Bros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #171936;
+            margin: 0;
+            padding: 0;
+        }
+        a, a:hover, a:focus {
+            color: inherit;
+            text-decoration: none;
+        }
+        #mario {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .box {
+            width: 40px;
+            height: 40px;
+            display: table-cell
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .yellow {
+            background-color: yellow;
+        }
+        .brown-light {
+            background-color: brown;
+        }
+        .brown-dark {
+            background-color: brown;
+        }
+        .black {
+            background-color: black;
+        }
+        .default {
+            background-color: burlywood;
+        }
+        .w-100 {
+            width: 100%;
+        }
+        .box-wrapper {
+            display: table;
+            height: 100vh;
+            margin: auto;
+        }
+        .aling-middle {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .dev-by {
+            color: #beafed;
+        }
+        @media(max-width: 768px) {
+            .box {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="mario">
+        <div class="box-wrapper">
+            <div class="h-100 aling-middle">
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box black"></div>
+                    <div class="box default"></div>
+                    <div class="box"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box default"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box black"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box default"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box black"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box red"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box black"></div>
+                    <div class="box black"></div>
+                    <div class="box black"></div>
+                    <div class="box black"></div>
+                    <div class="box red"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box blue"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box blue"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                </div>
+                <div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box blue"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box blue"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                </div>
+                <div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box default"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box blue"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box red"></div>
+                    <div class="box yellow"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box default"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box yellow"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                    <div class="box blue"></div>
+                </div>
+                <div>
+                    <div class="box"></div>
+                    <div class="box brown-dark"></div>
+                    <div class="box brown-dark"></div>
+                </div>
+                <div class="text-center dev-by">
+                    © 2018 Developed by <a href="mailto:dev.mgonzalez@gmail.com">Moisés González</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Development by Moises Gonzlez -->
+</body>
+</html>
